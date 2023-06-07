@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+body {
+  background-color: white;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.menu > a {
+  font-size: 25px;
+  margin-right: 40px;
+  border: 4x solid black;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2,
+h3 {
+  font-size: 30px;
+}
+
+p,
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+}
+
+h1,
+p,
+h2 {
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 5px;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+  margin-left: 5px;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+a.link-barra {
+  transition: 0.25s;
+}
+
+a.link-barra:hover {
+  transform: scale(1.1);
+}
+
+a.link-barra:active {
+  transform: scale(0.9);
+}
+
+div.conteudo {
+  justify-content: center;
+}
+
+video,
+source {
+  display: block;
+  margin: 0 auto;
+  width: 650px;
+}
+
+.foto-pequena-direita {
+  width: 110px;
+  height: auto;
+  margin: 7px 0 7px 8px;
+  float: right;
+}
+
+.foto-pequena-esquerda {
+  width: 150px;
+  height: auto;
+  margin: 7px 8px 7px 0px;
+  float: left;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+table {
+  font-family: Arial, Helvetica, sans-serif;
+}
+img {
+  width: 300px;
+  height: 100;
+  display: block;
+  margin: 0 auto;
+}

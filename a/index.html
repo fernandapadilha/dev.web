@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>teste</title>
+    <style>
+      h1 {
+        background-color: blue;
+        color: white;
+      }
+      #titulo-principal {
+        background-color: green;
+        text-decoration: underline;
+      }
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .center {
+        text-align: center;
+      }
+      .italic {
+        font-style: italic;
+      }
+      #txtNome:hover {
+        border-color: red;
+      }
+      #txtNome:focus {
+        border: 5px red solid;
+      }
+      strong {
+        font-weight: normal;
+        text-decoration: overline underline;
+      }
+      strong:hover {
+        background-color: green;
+        text-decoration: none;
+      }
+  
+      #esconder > p {
+        background-color: blue;
+        padding: 21px;
+        display: none;
+      }
+      #esconder:hover > p {
+        display: block;
+      }
+      #especial > p::first-letter {
+        font-size: 2em;
+        border: 2px blue solid;
+
+      }
+    </style>
+  </head>
+  <body style="margin: 0%">
+    <h1 id="titulo-principal" class="center italic">Título principal</h1>
+    <p class="right">
+      P0: Lorem <strong> ipsum dolor</strong> sit amet consectetur adipisicing
+      elit. Dignissimos quidem molestias deserunt omnis placeat inventore porro
+      soluta neque. Quos, saepe sit! Nisi delectus ab ullam corporis possimus
+      recusandae aut ipsa.
+    </p>
+    <p class="center">
+      P1: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem
+      numquam nam perferendis, placeat distinctio doloremque sint ipsum,
+      molestiae incidunt praesentium, minima illum architecto quibusdam
+      repudiandae blanditiis aut suscipit error sed?
+    </p>
+    <h1>Titulo 2</h1>
+    <p>
+      P2: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+      tempora maxime, at facere veniam, odit reprehenderit quis, doloremque
+      commodi repudiandae voluptatem nostrum quo odio praesentium! Eveniet quis
+      voluptate sit cumque.
+    </p>
+    <input type="text" id="txtNome" />
+    <div id="esconder">
+      <h2>Teste</h2>
+      <p>
+        P3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate,
+        recusandae optio in quo commodi at similique quisquam veritatis nostrum
+        quibusdam accusamus? Tempora, dolorum nisi! Dolore, vitae. Atque,
+        mollitia. Dolor, maxime.
+      </p>
+    </div>
+    <div id="especial">
+      <p>
+        P4: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+        adipisci doloremque vitae earum ab cupiditate nam officia. Explicabo
+        corporis ipsa dolore molestias nesciunt natus vitae voluptate, repellat
+        ducimus doloribus fuga!
+      </p>
+    </div>
+  </body>
+</html>
