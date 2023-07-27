@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #quadrado{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            animation-name: muda_cor;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes muda_cor{
+            0%{
+                background-color: red;
+            }
+            14%{
+                background-color: orange;
+            }
+            29%{
+                background-color: yellow;
+            }
+            43%{
+                background-color: green;
+            }
+            57%{
+                background-color: turquoise;
+            }
+            71%{
+                background-color: indigo;
+            }
+            100%{
+                background-color: violet;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout responsivo</title>
+    <style>
+        header{
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+        #logo > img{
+            width: 100px;
+        }
+        #titulo{
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: 5px 5px 5px gray;
+        }
+        @media (max-width: 390px) {
+            #logo{
+                display: none;
+            }
+            header{
+                grid-template-columns: 1fr;
+            }
+            #titulo{
+                background-image: url('imagens/fox.ico');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 60px 60px;
+
+            }
+            
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        main > div{
+            min-height: 100px;
+            border: 1px solid black;
+        }
+
+        @media (max-width: 950px) {
+            main{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 500px) {
+            main{
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="imagens/fox.ico" alt="">
+        </div>
+        <div id="titulo">
+            -FOX News-
+        </div>
+    </header>
+
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </main>
+    
+</body>
+</html>

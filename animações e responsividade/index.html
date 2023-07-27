@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="imagens/nuvem.ico" type="image/x-icon">
+  <title>Animações</title>
+  <style>
+    #quadrado{
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      animation-name: muda_cor;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes muda_cor {
+      0%{
+        background-color: black;
+      }
+      25%{
+        background-color: red;
+      }
+      50%{
+        background-color: blue;
+      }
+      75%{ 
+        background-color: lime;
+      }
+      100%{
+        background-color: black;
+      }
+    }
+    #imagem{
+      height: 500px;
+      width: 500px;
+      border: 1px solid black;
+      background-image: url("imagens/fox.ico");
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation-name: muda_imagem;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes muda_imagem {
+      0%{
+        background-image: url("imagens/fox.ico");
+      }
+      33%{
+        background-image: url("imagens/nuvem.ico");
+      }
+      66%{
+        background-image: url("imagens/raposa1.jpg");
+      }
+      100%{
+        background-image: url("imagens/fox.ico");
+      }
+    }
+    #bola{
+      height: 100px;
+      width: 100px;
+      border: 1px solid orange;
+      background-color: bisque;
+      border-radius: 50%;
+      position: absolute;
+      top: 108px;
+      animation: rola_bola 2s infinite;
+    }
+    @keyframes rola_bola {
+      0%{
+        top: 108px;
+        left: 0px;
+      }
+      25%{
+        top: 108px;
+        left: 400px;
+      }
+      50%{
+        top: 508px;
+        left: 400px;
+      }
+      75%{
+        top: 508px;
+        left: 0px;
+      }
+      100%{
+        top: 108px;
+        left: 0px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div id="quadrado">
+
+  </div>
+  <div id="imagem">
+
+  </div>
+  <div id="bola">
+
+  </div>
+</body>
+</html>
