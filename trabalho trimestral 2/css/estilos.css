@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 :root {
   --cor1: #d9cfc3;
   --cor2: #d1aaa2;
@@ -7,18 +8,21 @@
   --cor5: #efd3d2;
   --cor6: #5c4033;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 body {
   width: 100%;
   height: 100%;
 
   background-color: #efd3d2;
 }
+
 header {
   width: 100%;
   height: 70px;
@@ -37,11 +41,13 @@ header {
 
   justify-content: space-between;
 }
+
 .menu {
   list-style: none;
   flex-wrap: wrap;
   display: flex;
 }
+
 .menu li a {
   color: #5c4033;
 
@@ -51,6 +57,7 @@ header {
   border-radius: 10px;
   margin-left: 10px;
 }
+
 .menu li a:hover {
   color: #ffff;
 
@@ -59,6 +66,7 @@ header {
   background-color: #b0c2cc;
   margin-left: 10px;
 }
+
 .logo {
   width: 45px;
   height: 45px;
@@ -74,6 +82,10 @@ h1 {
 
   margin-top: 20px;
 }
+p, h2{
+  color: #5c4033;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 .container {
   max-width: 1200px;
@@ -85,19 +97,45 @@ h1 {
   flex-wrap: wrap;
 }
 
-.container div{
-    flex: 1 1 300px;
+.container div {
+  flex: 1 1 300px;
 
-    margin: 10px;
+  margin: 10px;
+}
+
+.caixa {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+
+
+  margin: 25px 15px 25px 15px;
+  border-radius: 30px;
+
+
+  border-color: #d1aaa2;
+  border-style: solid;
+  border-width: 5px;
+  padding: 20px 15px 30px 45px;
+
+}
+
+.caixa-img{
+  grid-row: 1/3;
+  width: 60%;
+  height: 70%;
+  object-fit: cover;
 }
 
 img {
-  width: 100%;
+  margin: 15px;
+  width: 10%;
   border-radius: 10px;
 }
 
-.constainer{
-    max-width: 1200px;
-    margin: 0 auto;
-    border: 1px solid #d1aaa2;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #d1aaa2;
 }

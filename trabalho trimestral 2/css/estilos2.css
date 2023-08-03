@@ -107,7 +107,7 @@ img {
     min-width: 200;
     height: 1000px;
 
-    background-color: #5c4033;
+    background-color: #d1aaa2;
     border-radius: 20px;
 
     grid-area: "sidenav";
@@ -118,7 +118,7 @@ img {
     min-width: 200;
     height: 300px;
     
-    background-color: #5c4033;
+    background-color: #d1aaa2;
     border-radius: 20px;
 
     grid-area: "item";
@@ -128,7 +128,7 @@ img {
     width: auto;
     height: 300px;
     
-    background-color: #5c4033;
+    background-color: #d1aaa2;
     border-radius: 20px;
 
     grid-area: "footer";
