@@ -143,6 +143,13 @@ img {
   border-radius: 10px;
 }
 
+.fotos{
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -152,7 +159,7 @@ img {
 .container-itens {
   max-width: 1200px;
   margin: 10% auto 5%;
-  border: 0px solid #b0c2cc;
+  border: 0px solid var(--cor4);
 
   display: grid;
   grid-gap: 20px;
@@ -180,7 +187,7 @@ img {
   min-width: 200;
   height: 1000px;
 
-  background-color: #5c4033;
+  background-color: var(--cor2);
   border-radius: 20px;
 
   grid-area: "sidenav";
@@ -191,7 +198,7 @@ img {
   min-width: 200;
   height: 300px;
 
-  background-color: #5c4033;
+  background-color: var(--cor2);
   border-radius: 20px;
 
   grid-area: "item";
@@ -201,9 +208,20 @@ img {
   width: auto;
   height: 300px;
 
-  background-color: #5c4033;
+  background-color: var(--cor2);
   border-radius: 20px;
 
   grid-area: "footer";
   grid-column: footer;
+}
+
+.rodape{
+  background-color: var(--cor2);
+  height: 200px;
+}
+
+.redes-sociais{
+  width: auto;
+  height: 65px;
+  border-radius: 0;
 }
