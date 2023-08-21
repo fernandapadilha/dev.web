@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500;6..12,700&display=swap");
 
 :root {
   --cor1: #d9cfc3;
@@ -14,7 +14,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 body {
@@ -47,6 +47,24 @@ body {
   color: var(--cor6);
 }
 
+.navegacao {
+  display: grid;
+  grid-template-columns: 33% 1px 34% 1px 33%;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 15%;
+  color: var(--cor-branco);
+  background-color: var(--cor4);
+}
+
+.navegacao-noticia {
+  max-width: 90%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--cor-branco);
+}
+
 .menu {
   color: var(--cor6);
 
@@ -67,19 +85,21 @@ body {
 }
 
 .logo {
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
+  margin: -30px 5px 10px 5px;
 
   border-radius: 10px;
 
-  background-color: #cccccc;
+  background-color: 0;
 }
 
 .titulo-index {
   color: var(--cor6);
   text-align: center;
 
-  margin-top: 20px;
+  margin-top: -120px;
+  margin-bottom: 10px;
 }
 
 .caixa-titulo {
@@ -88,6 +108,7 @@ body {
   font-size: 25px;
   font-weight: 700;
   margin-bottom: -70;
+  row-gap: auto;
 }
 
 .caixa-texto {
@@ -117,17 +138,15 @@ body {
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
-
+  row-gap: 100px;
 
   margin: 25px 15px 25px 15px;
   border-radius: 30px;
-
 
   border-color: var(--cor2);
   border-style: solid;
   border-width: 5px;
   padding: 20px 15px 30px 45px;
-
 }
 
 .caixa-img {
@@ -143,7 +162,14 @@ img {
   border-radius: 10px;
 }
 
-.fotos{
+.anuncio-img {
+  width: 90%;
+  height: 97%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.fotos {
   width: 90%;
   height: 90%;
   border-radius: 10px;
@@ -165,16 +191,16 @@ img {
   grid-gap: 20px;
 
   grid-template-areas:
-   "sidenav item item"
-   "sidenav item item"
-   "sidenav item item"
-   "footer footer footer";
+    "sidenav item item"
+    "sidenav item item"
+    "sidenav item item"
+    "footer footer footer";
 }
 
-.container div{
-    flex: 1 1 300px;
+.container div {
+  flex: 1 1 300px;
 
-    margin: 10px;
+  margin: 10px;
 }
 
 img {
@@ -182,7 +208,7 @@ img {
   border-radius: 20px;
 }
 
-.sidenav{
+.sidenav {
   max-width: 300px;
   min-width: 200;
   height: 1000px;
@@ -193,7 +219,7 @@ img {
   grid-area: "sidenav";
   grid-row: sidenav;
 }
-.item{
+.item {
   max-width: 300px;
   min-width: 200;
   height: 300px;
@@ -204,7 +230,7 @@ img {
   grid-area: "item";
 }
 
-.footer{
+.footer {
   width: auto;
   height: 300px;
 
@@ -215,12 +241,14 @@ img {
   grid-column: footer;
 }
 
-.rodape{
+.rodape {
   background-color: var(--cor2);
   height: 200px;
+  box-shadow: 0px 5px 10px rgb(182, 168, 168);
+  padding: 10px;
 }
 
-.redes-sociais{
+.redes-sociais {
   width: auto;
   height: 65px;
   border-radius: 0;
