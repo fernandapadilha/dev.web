@@ -63,6 +63,15 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: var(--cor-branco);
+  transition: 0.15s;
+}
+
+.navegacao-noticia:hover {
+  transform: scale(1.1);
+}
+
+.navegacao-noticia:active {
+  transform: scale(0.9);
 }
 
 .menu {
@@ -73,6 +82,7 @@ body {
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   margin-left: 10px;
+  transition: 0.15s;
 }
 
 .menu:hover {
@@ -81,6 +91,15 @@ body {
   display: block;
   text-decoration: none;
   background-color: var(--cor4);
+  margin-left: 10px;
+}
+
+.menu:active {
+  color: var(--cor4);
+
+  display: block;
+  text-decoration: none;
+  background-color: white;
   margin-left: 10px;
 }
 
@@ -109,6 +128,15 @@ body {
   font-weight: 700;
   margin-bottom: -70;
   row-gap: auto;
+  transition: 0.15s;
+}
+
+.caixa-titulo:hover {
+  transform: scale(1.1);
+}
+
+.caixa-titulo:active {
+  transform: scale(0.9);
 }
 
 .caixa-texto {
